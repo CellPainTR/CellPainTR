@@ -1,0 +1,31 @@
+hyena_config: 'configs/config.json'
+train_file: '../data_process/data_cp'
+JUMP_meta: '../data/Metadata_plate_well_compound.csv'
+Pheno_ids_fast_load: '../data/metadata/Pheno_ids.txt'
+plate_path: "../data/metadata/plate.csv.gz"
+well_path: "../data/metadata/well.csv.gz"
+compound_path: "../data/metadata/compound.csv.gz"
+nega_con: 'IAZDPXIOMUYVGZ-UHFFFAOYSA-N'
+
+vocab: 'vocab.txt'
+data_path: 'configs/'
+
+dyes: {'DNA': 1,'ER':2,'Mito': 3,'RNA': 4,'AGP': 5}
+parts: {'Cells': 1,'Cytoplasm': 2,'Nuclei': 3}
+compound_encoding_path: '../data/metadata/compound_encoding.json'
+
+folder_keywords: None
+
+batch_size: 16
+momentum: 0.995
+alpha: 0.4
+
+temperature: 0.07
+projection_dim: 128
+
+max_grad_norm: 1.0
+
+mrm_probability: 0.4
+
+optimizer: {opt: adamW, lr: 1e-4, weight_decay: 0}
+schedular: {sched: cosine, lr: 1e-4, epochs: 50, min_lr: 1e-4, decay_rate: 1, warmup_lr: 1e-4, warmup_epochs: 0, cooldown_epochs: 0}
