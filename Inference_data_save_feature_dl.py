@@ -138,7 +138,7 @@ def main(config_path, checkpoint_path, output_dir):
     logging.info("All files processed successfully")
 
 if __name__ == "__main__":
-    config_path = './configs/Pretrain - 2.yaml'
+    config_path = './configs/Pretrain.yaml'
     checkpoint_path = '...'
     output_dir = '...'
     
