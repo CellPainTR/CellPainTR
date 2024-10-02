@@ -97,7 +97,7 @@ Note: At least one of `--dl_folder` or `--preprocessed_folder` must be specified
 
 3. Step Three: Inter-Source Training
    - Use the same training script as step two
-   - Use the last checkpoint from step one as the initial checkpoint
+   - Use the last checkpoint from step two as the initial checkpoint
    - Use the shuffled dataset (specify in the `pretrain.yaml` file)
 
 ### Experiments
